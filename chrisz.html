@@ -1,0 +1,394 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>CHRISZ | Ghanaian eFootball Player</title>
+
+    <meta name="description"
+          content="Discover CHRISZ, a Ghanaian eFootball player with a highest recorded PvP ranking of 116 in Division 1. Explore his profile, gaming clans and gameplay.">
+
+    <meta name="keywords"
+          content="CHRISZ, Chrisz eFootball, eFootball Ghana, Ghanaian eFootball player, Division 1 eFootball">
+
+    <meta name="author" content="CHRISZ">
+
+    <meta property="og:title" content="CHRISZ | Ghanaian eFootball Player">
+    <meta property="og:description"
+          content="Meet CHRISZ, a Ghanaian eFootball player. Explore his profile, competitive ranking and gaming community.">
+    <meta property="og:type" content="website">
+
+    <meta name="theme-color" content="#07111f">
+
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, Helvetica, sans-serif;
+            background: #07111f;
+            color: #ffffff;
+            line-height: 1.7;
+        }
+
+        header {
+            background: #050912;
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 1px solid #1b2c43;
+        }
+
+        .logo {
+            font-size: 27px;
+            font-weight: 900;
+            letter-spacing: 3px;
+            color: #39a9ff;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 20px;
+            font-size: 14px;
+        }
+
+        nav a:hover {
+            color: #39a9ff;
+        }
+
+        .hero {
+            min-height: 430px;
+            padding: 85px 8%;
+            display: flex;
+            align-items: center;
+            background:
+                radial-gradient(ellipse at 85% 30%, #153c70 0%, transparent 45%),
+                linear-gradient(135deg, #07111f, #101d32);
+        }
+
+        .hero-content {
+            max-width: 800px;
+        }
+
+        .badge {
+            display: inline-block;
+            color: #77c8ff;
+            border: 1px solid #2879bd;
+            border-radius: 25px;
+            padding: 5px 14px;
+            font-size: 13px;
+            margin-bottom: 20px;
+        }
+
+        h1 {
+            font-size: clamp(48px, 9vw, 82px);
+            line-height: 1.1;
+            margin-bottom: 20px;
+        }
+
+        h1 span {
+            color: #39a9ff;
+        }
+
+        .hero p {
+            max-width: 650px;
+            color: #c5d2e3;
+            font-size: 17px;
+            margin-bottom: 25px;
+        }
+
+        .button {
+            display: inline-block;
+            background: #1688ee;
+            color: white;
+            text-decoration: none;
+            padding: 12px 23px;
+            border-radius: 7px;
+            font-weight: bold;
+            margin: 5px 8px 5px 0;
+        }
+
+        .button.secondary {
+            background: transparent;
+            border: 1px solid #71859e;
+        }
+
+        section {
+            padding: 65px 8%;
+        }
+
+        .section-title {
+            font-size: 31px;
+            margin-bottom: 12px;
+        }
+
+        .section-intro {
+            color: #aebed2;
+            margin-bottom: 30px;
+        }
+
+        .stats {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(190px, 1fr));
+            gap: 18px;
+            margin-top: 25px;
+        }
+
+        .card {
+            background: #101d30;
+            border: 1px solid #233953;
+            border-radius: 12px;
+            padding: 25px;
+        }
+
+        .card h3 {
+            color: #a7c9f1;
+            font-size: 14px;
+            margin-bottom: 8px;
+        }
+
+        .stat-number {
+            font-size: 32px;
+            font-weight: bold;
+            color: #43b2ff;
+        }
+
+        .card p {
+            color: #c3cede;
+        }
+
+        .clans {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 18px;
+        }
+
+        .clan {
+            text-align: center;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .clan span {
+            display: block;
+            font-size: 35px;
+            margin-bottom: 8px;
+        }
+
+        .about {
+            background: #0b1728;
+        }
+
+        .notice {
+            margin-top: 20px;
+            padding: 15px;
+            background: #14243a;
+            border-left: 4px solid #39a9ff;
+            color: #c8d7e8;
+            border-radius: 5px;
+        }
+
+        footer {
+            text-align: center;
+            padding: 30px 8%;
+            background: #040810;
+            color: #9aabc0;
+            font-size: 14px;
+        }
+
+        footer a {
+            color: #55b8ff;
+            text-decoration: none;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero {
+                padding-top: 65px;
+                padding-bottom: 65px;
+            }
+
+            section {
+                padding: 45px 6%;
+            }
+        }
+    </style>
+</head>
+
+<body>
+
+<header>
+    <div class="logo">CHRISZ 🇬🇭</div>
+
+    <nav>
+        <a href="#profile">Profile</a>
+        <a href="#ranking">Ranking</a>
+        <a href="#clans">Clans</a>
+        <a href="#social">Social</a>
+    </nav>
+</header>
+
+<main>
+
+    <section class="hero">
+        <div class="hero-content">
+
+            <div class="badge">GHANA 🇬🇭 | eFOOTBALL</div>
+
+            <h1>MEET <span>CHRISZ</span></h1>
+
+            <p>
+                Discover CHRISZ, a Ghanaian eFootball player competing
+                in Division 1. Explore his competitive profile, recorded
+                PvP ranking, gaming clans and eFootball journey.
+            </p>
+
+            <a class="button" href="#profile">Explore Player Profile</a>
+
+            <a class="button secondary"
+               href="https://www.tiktok.com/@chrisz78"
+               target="_blank"
+               rel="noopener noreferrer">
+                Follow on TikTok
+            </a>
+
+        </div>
+    </section>
+
+    <section id="profile">
+
+        <h2 class="section-title">Player Profile</h2>
+
+        <p class="section-intro">
+            Get to know CHRISZ and his eFootball competitive profile.
+        </p>
+
+        <div class="stats">
+
+            <div class="card">
+                <h3>GAMING NAME</h3>
+                <div class="stat-number">CHRISZ</div>
+                <p>In-game username: _chrisz-cb7</p>
+            </div>
+
+            <div class="card">
+                <h3>COUNTRY</h3>
+                <div class="stat-number">Ghana</div>
+                <p>Representing the Ghanaian eFootball community.</p>
+            </div>
+
+            <div class="card">
+                <h3>HIGHEST PvP DIVISION</h3>
+                <div class="stat-number">Division 1</div>
+                <p>Based on the supplied eFootball profile screenshot.</p>
+            </div>
+
+            <div class="card" id="ranking">
+                <h3>HIGHEST RECORDED PvP RANK</h3>
+                <div class="stat-number">#116</div>
+                <p>Highest PvP rank shown in the supplied screenshot.</p>
+            </div>
+
+        </div>
+
+        <div class="notice">
+            Ranking information reflects the supplied game profile.
+            It does not independently establish a national ranking
+            among all eFootball players in Ghana.
+        </div>
+
+    </section>
+
+    <section class="about" id="clans">
+
+        <h2 class="section-title">Gaming Clans</h2>
+
+        <p class="section-intro">
+            The eFootball clans associated with CHRISZ, as provided
+            for this player profile.
+        </p>
+
+        <div class="clans">
+
+            <div class="card clan">
+                <span>⚔️</span>
+                The Menace Masters
+            </div>
+
+            <div class="card clan">
+                <span>🦊</span>
+                Les Renards
+            </div>
+
+            <div class="card clan">
+                <span>🎮</span>
+                TGU Esports
+            </div>
+
+        </div>
+
+        <div class="notice">
+            Clan names are listed for identification. Their current
+            membership and any official affiliations should be confirmed.
+        </div>
+
+    </section>
+
+    <section id="social">
+
+        <h2 class="section-title">Follow CHRISZ</h2>
+
+        <p class="section-intro">
+            Follow CHRISZ on TikTok for eFootball content and gameplay.
+        </p>
+
+        <div class="card">
+            <h3>TIKTOK</h3>
+            <p>@chrisz78</p>
+
+            <br>
+
+            <a class="button"
+               href="https://www.tiktok.com/@chrisz78"
+               target="_blank"
+               rel="noopener noreferrer">
+                Visit TikTok Profile
+            </a>
+        </div>
+
+        <div class="notice">
+            Gameplay videos and additional player information can be
+            added to this page later.
+        </div>
+
+    </section>
+
+</main>
+
+<footer>
+    <p>CHRISZ | Ghanaian eFootball Player</p>
+    <p>Independent player profile. Not an official Konami website.</p>
+    <p>© <span id="year"></span> CHRISZ</p>
+</footer>
+
+<script>
+    document.getElementById("year").textContent =
+        new Date().getFullYear();
+</script>
+
+</body>
+</html>
